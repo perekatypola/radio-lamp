@@ -1,0 +1,59 @@
+$black-transparent : transparentize(black , 0.7);
+
+.back-image {
+  width:99vw;
+  height: 100vh;
+}
+.background {
+  width: 99vw;
+  height:140vh;
+  padding: 0;
+  border:0;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparentize(white , 0.2);
+  box-shadow:  0 50px 50px $black-transparent;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+ li {
+   background-color: black;
+   list-style-type:none;
+   padding:0;
+   margin:0;
+   border:0;
+ }
+
+ ul {
+   margin:0;
+   padding:0;
+ }
+  .description {
+    font-kerning: normal;
+    font-family: 'Sun';
+    font-size: 5vh;
+    padding-left: 50vh;
+    padding-right: 50vh;
+    padding-top: 5vh;
+    color:white;
+  }
+  h1 {
+    margin:0;
+    font-kerning: normal;
+    font-family: 'Sun';
+    font-size: 7vh;
+    padding-left: 50vh;
+    padding-right: 50vh;
+    padding-top: 25vh;
+    color:white;
+}
+.player {
+  margin-top:25vh;
+  border: 0.4vw double #262626;
+  height:5vw;
+  display:flex;
+  border-radius: 2vw;
+  background-color: transparentize(white ,0.9);
+}

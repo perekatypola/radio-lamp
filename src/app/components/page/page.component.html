@@ -1,0 +1,15 @@
+<ul>
+    <li *ngFor = "let page of translator.getLocale()">
+      <div class = "background" [style.backgroundImage]="'url(' + page.image + ')'">
+        <h1 align = center class = ""> {{page.head}}</h1>
+          <div align = center class = "description">
+            {{page.text}}
+          </div>
+        <div class = "player">
+          <app-player [trackPath]="'assets/tracks/'+page.id+'.mp3'"></app-player>
+        </div>
+      </div>
+    </li>
+</ul>
+
+
