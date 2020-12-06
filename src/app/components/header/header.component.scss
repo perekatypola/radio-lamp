@@ -1,0 +1,76 @@
+$black-transparent : transparentize(black , 0.5);
+
+:host {
+  display: flex;
+  flex-direction:column;
+}
+
+header {
+  height:12vh;
+  display:flex;
+  position: sticky;
+  top: 0;
+  width: 99vw;
+  align-items: center;
+  background-color: $black-transparent;
+  box-shadow:  0 50px 50px $black-transparent;
+  z-index: 10;
+}
+
+.head-image{
+  padding-bottom: 0;
+  height: 50vh;
+  width:99vw;
+}
+a {
+  opacity: 0.7;
+  flex-grow:1;
+  width:3.4vw;
+  height:3.4vw;
+}
+img {
+  position: relative;
+  width:100%;
+  height: 100%;
+}
+button {
+  height:5vh;
+  width:5vh;
+  background-color: #385e8d;
+  border-radius: 1vh;
+  margin-right: 1vw;
+  font-family: 'Sun';
+  font-size: 5vh;
+  color:#e6e6e6;
+  border:0px;
+  text-align: center;
+  font-kerning: normal;
+}
+button:hover {
+  opacity: 0.6;
+}
+a:hover {
+  opacity: 0.4;
+}
+.button-box {
+  flex-grow:10;
+  flex: 1 1 auto;
+  display:flex;
+  justify-content:flex-start;
+}
+span {
+  font-family: 'Sun';
+  font-size: 9vh;
+  color:#e6e6e6;
+}
+.header-box {
+  height:fit-content;
+  align-items:center;
+  display: flex;
+  flex-direction: row;
+}
+h3 {
+  position	: absolute;
+  top		: 40vh;
+  margin-left		: 40vw;
+}

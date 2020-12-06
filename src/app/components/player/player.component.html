@@ -1,0 +1,9 @@
+<div class="player">
+<audio #audio (timeupdate)="progress()"  class="player">
+  <source src={{trackPath}} type="audio/mp3">
+</audio>
+    <button (click)="play()" class ="play"><h1></h1></button>
+    <button (click)="pause()" class ="pause"><h1></h1></button>
+    <app-progress-bar [progress]="progressBar"></app-progress-bar>
+    <button (click)="download()" class="download"></button>
+</div>

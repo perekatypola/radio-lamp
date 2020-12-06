@@ -1,0 +1,22 @@
+<header>
+  <div class="header-box">
+    <div class="button-box">
+      <button (click)="setFlag(true)">
+        EN
+      </button>
+      <button (click)="setFlag(false)">
+        RU
+      </button>
+    </div>
+    <a href="https://vk.com/radiolampovo" target="_blank" title="VK" class="vk-logo">
+      <img src="assets/images/vk.png">
+    </a>
+  </div>
+</header>
+<div>
+  <img src="/assets/images/head.jpg" class="head-image">
+  <h3><span>{{translator.getHeaderLocale(true)}}</span></h3>
+</div>
+
+
+

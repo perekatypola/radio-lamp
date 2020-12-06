@@ -1,0 +1,30 @@
+.player {
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  align-items: center;
+}
+#progressBar{
+  background: #262626;
+  height: 5vh;
+  flex:1 1 auto;
+}
+.play {
+  background-image: url("play.png");
+}
+.pause {
+  background-image: url("pause.png");
+}
+.download {
+  background-image: url("download.png");
+}
+button {
+  width: 5vw;
+  height:5vw;
+  background-color: transparent;
+  border:0px;
+  background-size: 50%;
+  background-repeat:no-repeat;
+  background-position: center;
+}
