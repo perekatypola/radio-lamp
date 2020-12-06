@@ -1,0 +1,65 @@
+.Logo {
+  background-color: #262626;
+  height: 120vh;
+  width: 99vw;
+}
+.logo-image {
+  padding-top: 35vh;
+  display: block;
+  margin: 0 auto;
+  height: 40vh;
+  width:40vh;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.first-page {
+  background-color:#ab3625;
+  width:99vw;
+}
+
+
+.blink {
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,2.0,0,1.0);
+  animation-duration: 1.5s;
+}
+
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.5; }
+}
+
+div[onclick] {
+  cursor: pointer;
+}
+
+.fire {
+  animation-name: firing;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  height:50vh;
+  margin-top: -13vh;
+  background-repeat:no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+@keyframes firing {
+  0% {
+    background-image: url("fire1.png");
+  }
+  25% {
+    background-image: url("fire2.png");
+  }
+  50%{
+    background-image: url("fire3.png");
+  }
+  75% {
+    background-image: url("fire4.png");
+  }
+  100% {
+    background-image: url("fire1.png");
+  }
+}
